@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main style="background-image: url('/images/background.jpg');height:100vh;">
+
+        <h1> Welcome to POMS App (Week5)</h1> </br>
+        <h1>
+            <a href="/">Home</a>
+            <a href="/adduser">Add New Parcel</a>
+            <a href="/getusers">List Parcel</a>
+            <a href="/deleteuser">Delete Parcel</a>
+            <a href="/updateuser">Update Parcel</a>
+            <a href="/findname">Find Parcel By Sender</a>
+            <a href="/findweight">Find Parcel By Weight</a>
+        </h1>
+
+        <form action="/deleteuserdata" method="POST">
+            ID
+            <input type="text" name="id" /><br />
+            <button type="submit">Delete parcel</button>
+        </form>
+    </main>
+
+</body>
+
+</html>

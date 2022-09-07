@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main style="background-image: url('/images/background.jpg');height:100vh;">
+
+        <h1> Welcome to POMS App (Week5)</h1> </br>
+        <h1>
+            <a href="/">Home</a>
+            <a href="/adduser">Add New Parcel</a>
+            <a href="/getusers">List Parcel</a>
+            <a href="/deleteuser">Delete Parcel</a>
+            <a href="/updateuser">Update Parcel</a>
+            <a href="/findname">Find Parcel By Sender</a>
+            <a href="/findweight">Find Parcel By Weight</a>
+        </h1>
+        <h2>New Parcel</h2>
+        <form action="/addnewuser" method="POST">
+            Sender <input type="text" name="uname" /> </br>
+            Address <input type="text" name="uaddress" /> </br>
+            Weight <input type="text" name="uage" /> </br>
+            <!-- Fragile
+            <select name="fragile" id="fragile">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select> -->
+            <input type="submit" value="Submit" /> </br>
+        </form>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<html>
+
+<head>
+
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+</head>
+
+<body>
+    <main style="background-image: url('/images/background.jpg');height:100vh;">
+
+        <h1> Welcome to POMS App (Week5)</h1> </br>
+        <h1>
+            <a href="/">Home</a>
+            <a href="/adduser">Add New Parcel</a>
+            <a href="/getusers">List Parcel</a>
+            <a href="/deleteuser">Delete Parcel</a>
+            <a href="/updateuser">Update Parcel</a>
+            <a href="/findname">Find Parcel By Sender</a>
+            <a href="/findweight">Find Parcel By Weight</a>
+        </h1>
+        <table>
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Address</td>
+                <td>Weight</td>
+            </tr>
+            <tbody>
+                <% for (let i=0;i < usersDb.length;i++){ %>
+                    <tr>
+                        <td>
+                            <%= usersDb[i]._id %>
+                        </td>
+                        <td>
+                            <%= usersDb[i].Sender %>
+                        </td>
+                        <td>
+                            <%= usersDb[i].Address %>
+                        </td>
+                        <td>
+                            <%= usersDb[i].Weight %>
+                        </td>
+                    </tr>
+                    <%}%>
+            </tbody>
+        </table>
+    </main>
+
+</body>
+
+</html>
